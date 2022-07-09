@@ -31,6 +31,15 @@ h1 {
   align-items: center;
 }
 
+.box img{
+  width:20px;
+  height:20px;
+}
+
+.box p{
+  margin-top: 20px;
+}
+
 .header p {
   color: rgb(194, 215, 239);
   margin-top: 60px;

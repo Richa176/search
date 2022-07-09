@@ -39,7 +39,7 @@ function SearchBar({ placeholder, data }) {
     <div className="search">
      <div className="header">
              <h1>Hi, Richa Saidha!</h1>
-             <p>Here are your stats for today {date}</p>
+             <p>Here are your stats for {date}</p>
     </div>
     <div className="header2">
              <h3>Stay Healthy</h3>
@@ -57,10 +57,12 @@ function SearchBar({ placeholder, data }) {
     </div>
   
     <div className="box">
-                <img src="%PUBLIC_URL%/steps.png"/> <span>  total steps <br/> Average {} steps per
-                day   </span>
-
+    <span> <img src="steps.png"/> {"    "} 
+                 total steps <br/>
+                <p>Average {} steps per day </p> 
+                </span>
     </div>
+    <hr/>
       
         {/* <div className="searchIcon">
           {filteredData.length === 0 ? (
