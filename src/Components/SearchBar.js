@@ -56,34 +56,22 @@ function SearchBar({ placeholder, data }) {
                 
     </div>
   
-       <h1>Hi, Richa Saidha!</h1>
-      <div className="searchInputs">
-        <input
-          type="text"
-          placeholder={placeholder}
-          value={wordEntered}
-          onChange={handleFilter}
-        />
-        <div className="searchIcon">
+    <div className="box">
+                <img src="%PUBLIC_URL%/steps.png"/> <span>  total steps <br/> Average {} steps per
+                day   </span>
+
+    </div>
+      
+        {/* <div className="searchIcon">
           {filteredData.length === 0 ? (
             <SearchIcon />
           ) : (
             <CloseIcon id="clearBtn" onClick={clearInput} />
           )}
-        </div>
+        </div> */}
       </div>
-      {filteredData.length != 0 && (
-        <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
-            return (
-              <a className="dataItem" href={value.link} target="_blank">
-                <p>{value.title} </p>
-              </a>
-            );
-          })}
-        </div>
-      )}
-    </div>
+     
+   
   );
 }
 
